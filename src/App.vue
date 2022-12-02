@@ -30,8 +30,8 @@ data(){
     <!-- to be continued -->
     <SocialMedia>
       <FaBandsFacebookF />
-      <BsTwitter />
-      <BsInstagram />
+      <!-- <BsTwitter />
+      <BsInstagram /> -->
     </SocialMedia>
     <!-- -->
    

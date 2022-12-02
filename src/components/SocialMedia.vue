@@ -1,7 +1,7 @@
 <template>
-    <div style="color:red;font-size:larger" class="flex justify-center my-12">
+    <div class="flex justify-center my-12 ">
         <!-- <SocialComponent/> -->
-        <span class="flex rounded-full border-2">
+        <span class="flex rounded-full border-2 p-2 text-blue-600 text-2xl hover:bg-blue-600 hover:text-white">
             <slot></slot>
         </span>
     </div>
