@@ -1,9 +1,9 @@
 <template>
-   <div class="flex justify-center my-16">
+   <div class="w-11/12 mx-auto my-12 md:max-w-xl">
       <img
         src="../assets/images/illustration-dashboard.png"
         alt="illustration dashboard"
-        class="w-11/12"
+        
       />
     </div>
 </template>
