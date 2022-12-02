@@ -18,7 +18,7 @@
       <input
         type="submit"
         value="Notify Me"
-        class="block bg-[#4f7df3] text-white rounded-3xl text-sm py-3 shadow-lg shadow-[#c2d3ff] border-2 border-[#c2d3ff] w-full cursor-pointer hover:bg-[#c2d3ff] ease-in duration-300 md:w-44"
+        class="block bg-[#4f7df3] text-white rounded-3xl text-sm py-3 shadow-lg shadow-[#c2d3ff] border-2 border-[#c2d3ff] w-full cursor-pointer hover:bg-[#c2d3ff] duration-300 hover:transition-colors hover:ease-in-out md:w-44"
         @click="showError"
       />
     </span>
