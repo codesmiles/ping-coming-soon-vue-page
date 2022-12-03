@@ -1,5 +1,8 @@
 <template>
-  <form class="py-10 w-10/12 mx-auto md:flex md:justify-between md:max-w-xl" @submit.prevent>
+  <form
+    class="py-10 w-10/12 mx-auto md:flex md:justify-between md:max-w-xl"
+    @submit.prevent
+  >
     <span class="mb-3 block md:inline-block">
       <input
         type="email"
@@ -10,8 +13,11 @@
         class="block rounded-3xl text-sm px-5 py-3 border border-solid border-[#969696] w-full md:w-96"
         :style="isError && emailBorderStyle"
       />
-      <p v-show="isError" class="text-[#ff5263] italic text-sm md:text-left md:pl-5">
-        Please provide a valid email address
+      <p
+        v-show="isError"
+        class="text-[#ff5263] italic text-sm md:text-left md:pl-5"
+      >
+       {{errorMessage}}
       </p>
     </span>
     <span>
@@ -30,6 +36,7 @@ export default {
     return {
       isError: false,
       emailBorderStyle: { borderColor: "#ff5263" },
+      errorMessage: "",
     };
   },
   methods: {
@@ -37,10 +44,16 @@ export default {
       let emailVal = this.$refs.email;
       var filter =
         /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-
-      !filter.test(emailVal.value)
-        ? (this.isError = true)
-        : (this.isError = false);
+      
+        if (emailVal.value === "") {
+          this.errorMessage = "Whoops! It looks like you forgot to add your email";
+          this.isError = true;
+        } else if (!filter.test(emailVal.value)) {
+          this.errorMessage = "Please provide a valid email address";
+          this.isError = true;
+        } else {
+          this.isError = false;
+        }
     },
   },
 };
