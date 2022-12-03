@@ -29,21 +29,21 @@ data(){
 
     <!-- NEED A BETTER LOGIC -->
     <div class="flex justify-center md:mt-20">
-      <social-media>
-        <a href="https.//www.instagram.com/codesmiles">
-          <BsInstagram />
+      <SocialMedia>
+        <a href="https://www.facebook.com/codesmiles" aria-label="Facebook">
+          <FaBandsFacebookF />
         </a>
-      </social-media>
       <social-media>
-        <a href="https://www.twitter.com/codesmiles_">
+        <a href="https://www.twitter.com/codesmiles_" aria-label="Twitter">
           <BsTwitter />
         </a>
       </social-media>
-      <SocialMedia>
-        <a href="https://www.facebook.com/codesmiles">
-          <FaBandsFacebookF />
-        </a>
       </SocialMedia>
+      <social-media>
+        <a href="https.//www.instagram.com/codesmiles" aria-label="instagram">
+          <BsInstagram />
+        </a>
+      </social-media>
     </div>
     <!--FIND A BETTER WAY TO MAKE THIS WORK -->
 
