@@ -8,7 +8,7 @@
 <script>
 export default {
     props: [],
-    components: { SocialComponent }
+    components: { }
 }
 </script>
 <style >
