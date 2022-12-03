@@ -26,15 +26,27 @@ data(){
     <Header />
     <Form />
     <DemoImg />
-   
-    <!-- to be continued -->
-    <SocialMedia>
-      <FaBandsFacebookF />
-      <!-- <BsTwitter />
-      <BsInstagram /> -->
-    </SocialMedia>
-    <!-- -->
-   
+
+    <!-- NEED A BETTER LOGIC -->
+    <div class="flex justify-center md:mt-20">
+      <social-media>
+        <a href="https.//www.instagram.com/codesmiles">
+          <BsInstagram />
+        </a>
+      </social-media>
+      <social-media>
+        <a href="https://www.twitter.com/codesmiles_">
+          <BsTwitter />
+        </a>
+      </social-media>
+      <SocialMedia>
+        <a href="https://www.facebook.com/codesmiles">
+          <FaBandsFacebookF />
+        </a>
+      </SocialMedia>
+    </div>
+    <!--FIND A BETTER WAY TO MAKE THIS WORK -->
+
     <Section />
   </div>
   <Footer />

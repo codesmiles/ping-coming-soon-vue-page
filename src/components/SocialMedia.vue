@@ -1,14 +1,11 @@
 <template>
     <div class="flex justify-center my-12 ">
-        <!-- <SocialComponent/> -->
-        <span class="flex rounded-full border-2 p-2 text-blue-600 text-2xl hover:bg-blue-600 hover:text-white">
+        <span class="rounded-full border-2 p-2 text-[#4f7df3] text-2xl hover:bg-[#4f7df3] hover:text-white hover:transition-colors duration-700 hover:ease-in-out">
             <slot></slot>
         </span>
     </div>
 </template>
 <script>
-import SocialComponent from './sub/SocialComponent.vue';
-
 export default {
     props: [],
     components: { SocialComponent }
