@@ -33,12 +33,12 @@ data(){
         <a href="https://www.facebook.com/codesmiles" aria-label="Facebook">
           <FaBandsFacebookF />
         </a>
+      </SocialMedia>
       <social-media>
         <a href="https://www.twitter.com/codesmiles_" aria-label="Twitter">
           <BsTwitter />
         </a>
       </social-media>
-      </SocialMedia>
       <social-media>
         <a href="https.//www.instagram.com/codesmiles" aria-label="instagram">
           <BsInstagram />
